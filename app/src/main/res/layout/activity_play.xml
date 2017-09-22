@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a1e9de"
+    tools:context="ingeniumbd.com.myapplication2.PlayActivity">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="gone" />
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </ListView>
+   <LinearLayout
+      android:layout_gravity="bottom"
+       android:gravity="bottom"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:background="@android:color/holo_orange_light"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_marginTop="25dp"
+               android:textStyle="bold"
+               android:id="@+id/currentdurationOfsong"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+               android:layout_alignLeft="@+id/seekbar"
+               android:layout_alignStart="@+id/seekbar" />
+           <TextView
+               android:layout_marginTop="25dp"
+               android:textStyle="bold"
+               android:id="@+id/currentSong"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+               android:layout_centerHorizontal="true" />
+           <TextView
+               android:layout_marginTop="25dp"
+               android:textStyle="bold"
+               android:id="@+id/durationOfsong"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+               android:layout_alignRight="@+id/seekbar"
+               android:layout_alignEnd="@+id/seekbar" />
+           <SeekBar
+               android:layout_margin="15dp"
+               android:id="@+id/seekbar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <LinearLayout
+               android:layout_below="@+id/seekbar"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageButton
+                   android:id="@+id/previous"
+                   android:layout_weight="1"
+                   android:padding="5dp"
+                   android:layout_margin="5dp"
+                   android:background="#424141"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/previous"/>
+               <ImageButton
+                   android:id="@+id/play"
+                   android:layout_weight="1"
+                   android:padding="5dp"
+                   android:layout_margin="5dp"
+                   android:background="#424141"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/play"/>
+               <ImageButton
+                   android:id="@+id/next"
+                   android:layout_weight="1"
+                   android:padding="5dp"
+                   android:layout_margin="6dp"
+                   android:background="#424141"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/next"/>
+               <!--<ImageButton-->
+                   <!--android:id="@+id/stop"-->
+                   <!--android:layout_weight="1"-->
+                   <!--android:padding="11dp"-->
+                   <!--android:layout_margin="5dp"-->
+                   <!--android:background="#424141"-->
+                   <!--android:layout_width="wrap_content"-->
+                   <!--android:layout_height="wrap_content"-->
+                   <!--android:src="@android:drawable/checkbox_off_background"/>-->
+           </LinearLayout>
+
+       </RelativeLayout>
+
+   </LinearLayout>
+
+</LinearLayout>
